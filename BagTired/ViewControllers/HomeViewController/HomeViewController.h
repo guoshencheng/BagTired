@@ -10,8 +10,7 @@
 #import "QRCodeReaderViewController.h"
 #import "QRCodeReader.h"
 
-@interface HomeViewController : BaseViewController<QRCodeReaderDelegate>
-
-
+@interface HomeViewController : BaseViewController<QRCodeReaderDelegate, UICollectionViewDelegate, UICollectionViewDataSource>
+@property (weak, nonatomic) IBOutlet UICollectionView *selectionCollectionView;
 
 @end

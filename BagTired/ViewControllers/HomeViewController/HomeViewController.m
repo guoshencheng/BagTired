@@ -7,7 +7,10 @@
 //
 
 #import "HomeViewController.h"
+#import "HomeViewController+Configuration.h"
 #import "UserInfoViewController.h"
+#import "HomeSectionCell.h"
+#import "UIColor+Utility.h"
 
 @implementation HomeViewController
 
@@ -18,6 +21,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self configureViews];
 }
 
 - (IBAction)didClickUserInfomation:(id)sender {
@@ -36,7 +40,6 @@
         [self.navigationController pushViewController:reader animated:YES];
     } else {
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Reader not supported by the current device" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
-        
         [alert show];
     }
 }
@@ -52,5 +55,40 @@
     [self.navigationController popViewControllerAnimated:YES];
 }
 
+#pragma mark - CollecionViewDatasource
+
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
+    return 4;
+}
+
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
+    if (indexPath.item == 0) {
+        return [self handleFirstCellWithCollectionView:collectionView indexPath:indexPath];
+    } else if (indexPath.item == 1) {
+        return [self handleSecondCellWithCollectionView:collectionView indexPath:indexPath];
+    } else if (indexPath.item == 2) {
+        return [self handleThirdCellWithCollectionView:collectionView indexPath:indexPath];
+    }
+    HomeSectionCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:HOME_SECTION_COLLECTION_CELL_ID forIndexPath:indexPath];
+    return cell;
+}
+
+- (HomeSectionCell *)handleFirstCellWithCollectionView:(UICollectionView *)collectionView  indexPath:(NSIndexPath *)indexPath {
+    HomeSectionCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:HOME_SECTION_COLLECTION_CELL_ID forIndexPath:indexPath];
+    [cell updateToFirstCell];
+    return cell;
+}
+
+- (HomeSectionCell *)handleSecondCellWithCollectionView:(UICollectionView *)collectionView  indexPath:(NSIndexPath *)indexPath {
+    HomeSectionCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:HOME_SECTION_COLLECTION_CELL_ID forIndexPath:indexPath];
+    [cell updateToSecondCell];
+    return cell;
+}
+
+- (HomeSectionCell *)handleThirdCellWithCollectionView:(UICollectionView *)collectionView  indexPath:(NSIndexPath *)indexPath {
+    HomeSectionCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:HOME_SECTION_COLLECTION_CELL_ID forIndexPath:indexPath];
+    [cell updateToThirdCell];
+    return cell;
+}
 
 @end

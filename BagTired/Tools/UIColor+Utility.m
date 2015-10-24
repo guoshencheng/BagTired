@@ -10,6 +10,22 @@
 
 @implementation UIColor (Utility)
 
++ (instancetype)secondBackgound {
+    return [UIColor colorFromHexCode:@"ff7e7f"];
+}
+
++ (instancetype)firstBackground {
+    return [UIColor colorFromHexCode:@"FFD463"];
+}
+
++ (instancetype)thirdBackground {
+    return [UIColor colorFromHexCode:@"7fdadb"];
+}
+
++ (instancetype)fourthBackgound {
+    return [UIColor colorFromHexCode:@""];
+}
+
 //example
 + (instancetype)darkGreyLabelColor {
     return [UIColor colorWithIntRed:50 green:50 blue:50];

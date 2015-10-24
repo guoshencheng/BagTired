@@ -22,6 +22,18 @@
 		2EA0BF5D1BDB7A700035C988 /* UserInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EA0BF5B1BDB7A700035C988 /* UserInfoViewController.xib */; settings = {ASSET_TAGS = (); }; };
 		2EA0BF601BDB84E70035C988 /* UserInfoViewController+Configuration.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EA0BF5F1BDB84E70035C988 /* UserInfoViewController+Configuration.m */; settings = {ASSET_TAGS = (); }; };
 		2EA0BF631BDB85660035C988 /* UIColor+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EA0BF621BDB85660035C988 /* UIColor+Utility.m */; settings = {ASSET_TAGS = (); }; };
+		2EA0BF671BDBA1EF0035C988 /* HomeSectionCell.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2EA0BF651BDBA1EF0035C988 /* HomeSectionCell.mm */; settings = {ASSET_TAGS = (); }; };
+		2EA0BF681BDBA1EF0035C988 /* HomeSectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EA0BF661BDBA1EF0035C988 /* HomeSectionCell.xib */; settings = {ASSET_TAGS = (); }; };
+		2EA0BF6D1BDBA7060035C988 /* girl.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EA0BF6C1BDBA7060035C988 /* girl.png */; settings = {ASSET_TAGS = (); }; };
+		2EA0BF6F1BDBACA90035C988 /* first_selection_text.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EA0BF6E1BDBACA90035C988 /* first_selection_text.png */; settings = {ASSET_TAGS = (); }; };
+		2EA0BF711BDBAD970035C988 /* scan_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EA0BF701BDBAD970035C988 /* scan_button.png */; settings = {ASSET_TAGS = (); }; };
+		2EA0BF731BDBAED40035C988 /* first_selection_description.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EA0BF721BDBAED40035C988 /* first_selection_description.png */; settings = {ASSET_TAGS = (); }; };
+		2EA0BF771BDBB4660035C988 /* add_book_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EA0BF741BDBB4660035C988 /* add_book_button.png */; settings = {ASSET_TAGS = (); }; };
+		2EA0BF781BDBB4660035C988 /* boy.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EA0BF751BDBB4660035C988 /* boy.png */; settings = {ASSET_TAGS = (); }; };
+		2EA0BF791BDBB4660035C988 /* second_selection_text.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EA0BF761BDBB4660035C988 /* second_selection_text.png */; settings = {ASSET_TAGS = (); }; };
+		2EA0BF7B1BDBB5DD0035C988 /* second_selection_description.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EA0BF7A1BDBB5DD0035C988 /* second_selection_description.png */; settings = {ASSET_TAGS = (); }; };
+		2EA0BF7E1BDBBA2F0035C988 /* third_selection_text.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EA0BF7C1BDBBA2F0035C988 /* third_selection_text.png */; settings = {ASSET_TAGS = (); }; };
+		2EA0BF7F1BDBBA2F0035C988 /* yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EA0BF7D1BDBBA2F0035C988 /* yellow.png */; settings = {ASSET_TAGS = (); }; };
 		EBFFE79C7066FAD4248BC196 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DA14567D179B44707DC73628 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +64,19 @@
 		2EA0BF5F1BDB84E70035C988 /* UserInfoViewController+Configuration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UserInfoViewController+Configuration.m"; sourceTree = "<group>"; };
 		2EA0BF611BDB85660035C988 /* UIColor+Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Utility.h"; sourceTree = "<group>"; };
 		2EA0BF621BDB85660035C988 /* UIColor+Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Utility.m"; sourceTree = "<group>"; };
+		2EA0BF641BDBA1EF0035C988 /* HomeSectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeSectionCell.h; sourceTree = "<group>"; };
+		2EA0BF651BDBA1EF0035C988 /* HomeSectionCell.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = HomeSectionCell.mm; sourceTree = "<group>"; };
+		2EA0BF661BDBA1EF0035C988 /* HomeSectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeSectionCell.xib; sourceTree = "<group>"; };
+		2EA0BF6C1BDBA7060035C988 /* girl.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = girl.png; sourceTree = "<group>"; };
+		2EA0BF6E1BDBACA90035C988 /* first_selection_text.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first_selection_text.png; sourceTree = "<group>"; };
+		2EA0BF701BDBAD970035C988 /* scan_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scan_button.png; sourceTree = "<group>"; };
+		2EA0BF721BDBAED40035C988 /* first_selection_description.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first_selection_description.png; sourceTree = "<group>"; };
+		2EA0BF741BDBB4660035C988 /* add_book_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = add_book_button.png; sourceTree = "<group>"; };
+		2EA0BF751BDBB4660035C988 /* boy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = boy.png; sourceTree = "<group>"; };
+		2EA0BF761BDBB4660035C988 /* second_selection_text.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second_selection_text.png; sourceTree = "<group>"; };
+		2EA0BF7A1BDBB5DD0035C988 /* second_selection_description.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second_selection_description.png; sourceTree = "<group>"; };
+		2EA0BF7C1BDBBA2F0035C988 /* third_selection_text.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = third_selection_text.png; sourceTree = "<group>"; };
+		2EA0BF7D1BDBBA2F0035C988 /* yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yellow.png; sourceTree = "<group>"; };
 		D9B28E415BBAF0C2214884EC /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		DA14567D179B44707DC73628 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -101,6 +126,7 @@
 			children = (
 				2E7F262E1BDB5A9B003BC139 /* AppDelegate.h */,
 				2E7F262F1BDB5A9B003BC139 /* AppDelegate.mm */,
+				2EA0BF6B1BDBA7060035C988 /* images */,
 				2EA0BF521BDB78F40035C988 /* Views */,
 				2EA0BF491BDB60820035C988 /* Tools */,
 				2EA0BF3E1BDB5CCE0035C988 /* ViewControllers */,
@@ -170,8 +196,28 @@
 		2EA0BF521BDB78F40035C988 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				2EA0BF641BDBA1EF0035C988 /* HomeSectionCell.h */,
+				2EA0BF651BDBA1EF0035C988 /* HomeSectionCell.mm */,
+				2EA0BF661BDBA1EF0035C988 /* HomeSectionCell.xib */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		2EA0BF6B1BDBA7060035C988 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				2EA0BF7C1BDBBA2F0035C988 /* third_selection_text.png */,
+				2EA0BF7D1BDBBA2F0035C988 /* yellow.png */,
+				2EA0BF7A1BDBB5DD0035C988 /* second_selection_description.png */,
+				2EA0BF741BDBB4660035C988 /* add_book_button.png */,
+				2EA0BF751BDBB4660035C988 /* boy.png */,
+				2EA0BF761BDBB4660035C988 /* second_selection_text.png */,
+				2EA0BF721BDBAED40035C988 /* first_selection_description.png */,
+				2EA0BF701BDBAD970035C988 /* scan_button.png */,
+				2EA0BF6E1BDBACA90035C988 /* first_selection_text.png */,
+				2EA0BF6C1BDBA7060035C988 /* girl.png */,
+			);
+			path = images;
 			sourceTree = "<group>";
 		};
 		E14434FBB800DF9F107C319E /* Frameworks */ = {
@@ -217,6 +263,7 @@
 				TargetAttributes = {
 					2E7F26271BDB5A9B003BC139 = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = 53H2AVD649;
 					};
 				};
 			};
@@ -244,9 +291,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E7F263E1BDB5A9B003BC139 /* LaunchScreen.storyboard in Resources */,
+				2EA0BF681BDBA1EF0035C988 /* HomeSectionCell.xib in Resources */,
+				2EA0BF711BDBAD970035C988 /* scan_button.png in Resources */,
+				2EA0BF7B1BDBB5DD0035C988 /* second_selection_description.png in Resources */,
+				2EA0BF781BDBB4660035C988 /* boy.png in Resources */,
+				2EA0BF7E1BDBBA2F0035C988 /* third_selection_text.png in Resources */,
 				2EA0BF5D1BDB7A700035C988 /* UserInfoViewController.xib in Resources */,
+				2EA0BF7F1BDBBA2F0035C988 /* yellow.png in Resources */,
 				2E7F263B1BDB5A9B003BC139 /* Assets.xcassets in Resources */,
 				2EA0BF481BDB5E4C0035C988 /* HomeViewController.xib in Resources */,
+				2EA0BF731BDBAED40035C988 /* first_selection_description.png in Resources */,
+				2EA0BF6F1BDBACA90035C988 /* first_selection_text.png in Resources */,
+				2EA0BF791BDBB4660035C988 /* second_selection_text.png in Resources */,
+				2EA0BF771BDBB4660035C988 /* add_book_button.png in Resources */,
+				2EA0BF6D1BDBA7060035C988 /* girl.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,6 +367,7 @@
 				2EA0BF511BDB78610035C988 /* HomeViewController+Configuration.m in Sources */,
 				2E7F26301BDB5A9B003BC139 /* AppDelegate.mm in Sources */,
 				2EA0BF601BDB84E70035C988 /* UserInfoViewController+Configuration.m in Sources */,
+				2EA0BF671BDBA1EF0035C988 /* HomeSectionCell.mm in Sources */,
 				2EA0BF631BDB85660035C988 /* UIColor+Utility.m in Sources */,
 				2EA0BF431BDB5D040035C988 /* BaseViewController.m in Sources */,
 				2E7F262D1BDB5A9B003BC139 /* main.m in Sources */,
@@ -417,11 +476,14 @@
 			baseConfigurationReference = D9B28E415BBAF0C2214884EC /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = BagTired/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = guoshencheng.BagTired;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -430,11 +492,14 @@
 			baseConfigurationReference = 0BDBADB81A69A59CA29B6AAA /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = BagTired/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = guoshencheng.BagTired;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

@@ -9,6 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface UIColor (Utility)
++ (instancetype)secondBackgound;
++ (instancetype)firstBackground;
++ (instancetype)thirdBackground;
++ (instancetype)fourthBackgound;
 
 + (instancetype)colorWithIntRed:(NSInteger)red green:(NSInteger)green blue:(NSInteger)blue;
 + (instancetype)colorWithIntRed:(NSInteger)red green:(NSInteger)green blue:(NSInteger)blue alpha:(NSInteger)alpha;

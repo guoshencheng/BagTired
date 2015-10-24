@@ -7,6 +7,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController">
             <connections>
+                <outlet property="selectionCollectionView" destination="l63-La-I0K" id="jIQ-ns-9dW"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -42,7 +43,7 @@
                         </button>
                     </subviews>
                     <animations/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstAttribute="trailing" secondItem="bba-iy-fo7" secondAttribute="trailing" id="1cY-fD-QRn"/>
                         <constraint firstAttribute="bottom" secondItem="bba-iy-fo7" secondAttribute="bottom" id="Cei-fZ-iii"/>
@@ -53,12 +54,27 @@
                         <constraint firstItem="e8O-Vm-Yhg" firstAttribute="leading" secondItem="tM3-SZ-Gxg" secondAttribute="leading" id="rQ4-pk-ty1"/>
                     </constraints>
                 </view>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="l63-La-I0K">
+                    <rect key="frame" x="0.0" y="85" width="320" height="423"/>
+                    <animations/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="exF-ka-xv3">
+                        <size key="itemSize" width="320" height="423"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
             </subviews>
             <animations/>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
                 <constraint firstItem="tM3-SZ-Gxg" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="9dk-jy-g3c"/>
+                <constraint firstAttribute="trailing" secondItem="l63-La-I0K" secondAttribute="trailing" id="LMi-7P-g4a"/>
+                <constraint firstItem="l63-La-I0K" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Pf2-3D-DfU"/>
                 <constraint firstItem="tM3-SZ-Gxg" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="ijF-Us-c0j"/>
+                <constraint firstAttribute="bottom" secondItem="l63-La-I0K" secondAttribute="bottom" constant="60" id="vGJ-uu-d4D"/>
+                <constraint firstItem="l63-La-I0K" firstAttribute="top" secondItem="tM3-SZ-Gxg" secondAttribute="bottom" constant="20" id="wmn-Vd-7WX"/>
                 <constraint firstAttribute="trailing" secondItem="tM3-SZ-Gxg" secondAttribute="trailing" id="wzo-AW-3QY"/>
             </constraints>
             <point key="canvasLocation" x="249" y="357"/>
