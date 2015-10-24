@@ -9,8 +9,12 @@
 #import "BaseViewController.h"
 #import "QRCodeReaderViewController.h"
 #import "QRCodeReader.h"
+#import "HomeSectionCell.h"
+#import "AddBookView.h"
 
-@interface HomeViewController : BaseViewController<QRCodeReaderDelegate, UICollectionViewDelegate, UICollectionViewDataSource>
+@interface HomeViewController : BaseViewController<QRCodeReaderDelegate, UICollectionViewDelegate, UICollectionViewDataSource, HomeSectionCellDelegate, AddBookViewDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 @property (weak, nonatomic) IBOutlet UICollectionView *selectionCollectionView;
+@property (strong, nonatomic) UIImagePickerController *picker;
+@property (strong, nonatomic) AddBookView *addBookView;
 
 @end

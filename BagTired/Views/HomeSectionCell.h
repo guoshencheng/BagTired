@@ -10,12 +10,21 @@
 #define HOME_SECTION_COLLECTION_CELL_ID @"HomeSectionCell"
 #define HOME_SECTION_COLLECTION_CELL_NIBNAME @"HomeSectionCell"
 
+@protocol HomeSectionCellDelegate;
 @interface HomeSectionCell : UICollectionViewCell
 
+@property (weak, nonatomic) id<HomeSectionCellDelegate> delegate;
+
 - (void)updateWithBackgroundColor:(UIColor *)backgroundColor;
-- (void)updateToSecondCell;
-- (void)updateToFirstCell;
+- (void)updateToSecondCellWithName:(NSString *)name tele:(NSString *)tele address:(NSString *)address;
+- (void)updateToFirstCellWithName:(NSString *)name tele:(NSString *)tele address:(NSString *)address;
 - (void)updateToThirdCell;
-- (void)updateToForthCell;
+
+@end
+
+@protocol HomeSectionCellDelegate <NSObject>
+@optional
+- (void)HomeSectionCellDidClickScanButton:(HomeSectionCell *)cell;
+- (void)HomeSectionCellDidClickBottomRightButton:(HomeSectionCell *)cell;
 
 @end
