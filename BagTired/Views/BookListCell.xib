@@ -71,6 +71,7 @@
             <connections>
                 <outlet property="addressLabel" destination="c1V-CY-hhg" id="cyd-XM-YLn"/>
                 <outlet property="avatarImageView" destination="sd5-uX-1Bf" id="ojR-Os-FeH"/>
+                <outlet property="containerView" destination="kEX-TN-5cN" id="QhO-5m-Bdg"/>
                 <outlet property="descriptionLabel" destination="k3B-fM-9up" id="8Of-xS-Pbt"/>
             </connections>
             <point key="canvasLocation" x="249" y="260"/>
