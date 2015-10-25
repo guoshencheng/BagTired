@@ -9,6 +9,7 @@
 #import "HomeViewController+Configuration.h"
 #import "HomeSectionCell.h"
 #import "Masonry.h"
+#import "UIScreen+Utility.h"
 
 @implementation HomeViewController (Configuration)
 
@@ -19,6 +20,9 @@
 }
 
 - (void)configureCollectionView {
+    UICollectionViewFlowLayout *layout = (UICollectionViewFlowLayout *)self.selectionCollectionView.collectionViewLayout;
+    layout.itemSize = CGSizeMake([UIScreen screenWidth], (433 / 320.0) * [UIScreen screenWidth]);
+    self.selectionCollectionView.collectionViewLayout = layout;
     [self.selectionCollectionView registerNib:[UINib nibWithNibName:HOME_SECTION_COLLECTION_CELL_NIBNAME bundle:nil] forCellWithReuseIdentifier:HOME_SECTION_COLLECTION_CELL_ID];
     self.selectionCollectionView.delegate = self;
     self.selectionCollectionView.dataSource = self;

@@ -8,6 +8,7 @@
 
 #import "BookListViewController.h"
 #import "UserInfoViewController.h"
+#import "MBProgressHUD.h"
 #import "BookListCell.h"
 #import "AFNetworking.h"
 
@@ -33,9 +34,11 @@
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     [self.tableView registerNib:[UINib nibWithNibName:BOOK_LIST_CELL_NIBNAME bundle:nil] forCellReuseIdentifier:BOOK_LIST_CELL_ID];
+    [MBProgressHUD showHUDAddedTo:self.view animated:YES];
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
     manager.requestSerializer = [AFHTTPRequestSerializer serializer];
-    [manager GET:@"http://121.199.78.191:3000/orderMenu/getAllOrders" parameters:@{@"userId":[[[NSUserDefaults standardUserDefaults] objectForKey:@"userInfo"] objectForKey:@"id"]} success:^(NSURLSessionDataTask * _Nonnull task, id  _Nonnull responseObject) {
+    [manager GET:@"http://121.199.78.191:3000/orderMenu/getAllOrders" parameters:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nonnull responseObject) {
+        [MBProgressHUD hideAllHUDsForView:self.view animated:YES];
         self.bookArray = responseObject;
         [self.tableView reloadData];
     } failure:^(NSURLSessionDataTask * _Nonnull task, NSError * _Nonnull error) {
@@ -68,9 +71,11 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     NSDictionary *dic = [self.bookArray objectAtIndex:indexPath.item];
+    [MBProgressHUD showHUDAddedTo:self.view animated:YES];
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
     manager.requestSerializer = [AFHTTPRequestSerializer serializer];
     [manager GET:@"http://121.199.78.191:3000/orderMenu/receiveOrder" parameters:@{@"userId":[[[NSUserDefaults standardUserDefaults] objectForKey:@"userInfo"] objectForKey:@"id"], @"orderId":[dic objectForKey:@"orderId"]} success:^(NSURLSessionDataTask * _Nonnull task, id  _Nonnull responseObject) {
+        [MBProgressHUD hideAllHUDsForView:self.view animated:YES];
         NSMutableArray *array = [[NSMutableArray alloc] initWithArray:self.bookArray];
         [array removeObjectAtIndex:indexPath.row];
         self.bookArray = array;

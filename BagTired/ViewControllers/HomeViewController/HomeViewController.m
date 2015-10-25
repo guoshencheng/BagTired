@@ -10,6 +10,7 @@
 #import "HomeViewController+Configuration.h"
 #import "UserInfoViewController.h"
 #import "UIColor+Utility.h"
+#import "MBProgressHUD.h"
 #import "AFNetworking.h"
 #import "UIImage+Utility.h"
 #import "CheckInfoViewController.h"
@@ -30,17 +31,18 @@
     manager.requestSerializer = [AFHTTPRequestSerializer serializer];
     [manager GET:@"http://121.199.78.191:3000/user/get?uid=2" parameters:nil success:^(NSURLSessionDataTask *task, id responseObject) {
         [[NSUserDefaults standardUserDefaults] setObject:responseObject forKey:@"storeInfo"];
-        [self.selectionCollectionView reloadData];
-    } failure:^(NSURLSessionDataTask *task, NSError *error) {
-        
-    }];
-    [manager GET:@"http://121.199.78.191:3000/user/get?uid=11" parameters:nil success:^(NSURLSessionDataTask *task, id responseObject) {
         [[NSUserDefaults standardUserDefaults] setObject:responseObject forKey:@"userInfo"];
-//        self.storeInfo = responseObject;
         [self.selectionCollectionView reloadData];
     } failure:^(NSURLSessionDataTask *task, NSError *error) {
         
     }];
+//    [manager GET:@"http://121.199.78.191:3000/user/get?uid=11" parameters:nil success:^(NSURLSessionDataTask *task, id responseObject) {
+//        [[NSUserDefaults standardUserDefaults] setObject:responseObject forKey:@"userInfo"];
+////        self.storeInfo = responseObject;
+//        [self.selectionCollectionView reloadData];
+//    } failure:^(NSURLSessionDataTask *task, NSError *error) {
+//        
+//    }];
     [self configureViews];
     
 }
@@ -147,6 +149,7 @@
 - (void)AddBookViewFinishWithText:(NSString *)text image:(UIImage *)image {
 //    NSString *imagePath = [[NSBundle mainBundle] pathForResource:@"boy" ofType:@"png"];
     NSDictionary *param = @{@"sellerId":[[[NSUserDefaults standardUserDefaults] objectForKey:@"storeInfo"] objectForKey:@"id"], @"orderName":text};
+    [MBProgressHUD showHUDAddedTo:self.view animated:YES];
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
     manager.requestSerializer = [AFHTTPRequestSerializer serializer];
     NSMutableURLRequest *request = [[AFHTTPRequestSerializer serializer] multipartFormRequestWithMethod:@"POST" URLString:@"http://121.199.78.191:3000/orderMenu/setOrder" parameters:param constructingBodyWithBlock:^(id<AFMultipartFormData> formData) {
@@ -159,6 +162,7 @@
         if (error) {
             NSLog(@"%@", error);
         } else {
+            [MBProgressHUD hideAllHUDsForView:self.view animated:YES];
             NSDictionary *result = responseObject;
             [self.addBookView setQRText:[result toJsonString]];
         }
